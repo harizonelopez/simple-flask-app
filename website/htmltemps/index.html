@@ -1,0 +1,94 @@
+{% extends "base.html" %} 
+{% block title %} Notes page {% endblock %}
+
+{% block content %}
+
+<style>
+
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #282c35;
+        color: #fff;
+    }
+
+    header {
+        background-color: #1e2229;
+        text-align: center;
+        padding: 1em;
+    }
+
+    p {
+        line-height: 1.6;
+        color: #a4acc4;
+    }
+
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #373c49;
+        color: #61dafb;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    footer {
+        background-color: #1e2229;
+        color: purple;
+        text-align: center;
+        padding: 0em 0;
+        position: fixed;
+        bottom: 0;
+        width: 75%;
+    }
+
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    </style>
+
+    <header>
+        <p>Welcome to the note taking app.</p>
+        <p>Enjoy as you put your thoughts into writting.</p>
+    </header>
+
+<section>
+    <form method="POST">
+        <h3 align="center">***Note App***</h3>
+        <div class="form-group">
+          <label for="notes">Enter your opinions.</label>
+          <input
+            type="text"
+            class="form-control"
+            id="notes"
+            columns="4"
+            name="notes" required 
+            name="note_content"
+            placeholder="Type your notes here..."
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Add notes</button>
+      </form>
+</section>
+  
+</body>
+
+<footer>
+    <p>&copy;2024 Dev_aladinh production.</p>
+</footer>
+
+{% endblock %}

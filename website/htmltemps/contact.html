@@ -1,0 +1,101 @@
+
+{% extends "base.html" %} 
+{% block title %} Contacts page {% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #282c35;
+            color: #fff;
+        }
+
+        header {
+            background-color: #1e2229;
+            text-align: center;
+            padding: 1em;
+        }
+
+        h1, h2 {
+            color: #61dafb;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #a4acc4;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #373c49;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #1e2229;
+            color: pink;
+            text-align: center;
+            padding: 0em 0;
+            position: fixed;
+            bottom: 0;
+            width: 75%;
+        }
+
+        a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            border-bottom: 2px solid #61dafb;
+        }
+
+        .project h3 {
+            color: #61dafb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <p>Use the below listed links to reach me if you are seeking something I might help you with.</p>
+    </header>
+
+    <section>
+        <p>Email: <a href="mailto:harizonelopez23@gmail.com">harizonelopez23@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/harizone-lopez-a267b625b" target="_blank">https://www.linkedin.com/in/harizone-lopez-a267b625b</a></p>
+        <p>GitHub: <a href="https://github.com/harizonelopez" target="_blank">github.com/harizonelopez</a></p>
+    </section>
+
+    <form method='POST'>
+    <button type="submit" class="btn btn-primary">Back</button>
+    </form>
+
+    <footer>
+        <p>&copy;2024 Dev_aladinh production.</p>
+    </footer>
+
+</body>
+
+</html>
+
+{% endblock %}
+
+   
