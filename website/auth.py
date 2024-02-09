@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request, flash, redirect, url_for
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/note', methods = ['POST', 'GET'])
+@auth.route('/note', methods = ['GET', 'POST'])
 def note():
     data = request.form
     print(data)
@@ -14,7 +14,7 @@ def note():
             flash('The note must have more than 10 characters.', category='error')
 
         else:
-            flash('Note recorded successfully', category='success')
+            flash('The note has been recorded successfully')
     
     return render_template("index.html")
 
