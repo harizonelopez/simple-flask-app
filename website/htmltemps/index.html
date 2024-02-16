@@ -1,8 +1,8 @@
 {% extends "base.html" %} 
-{% block title %} Notes pageinfo {% endblock %}
+{% block title %} Notes page {% endblock %}
 
 {% block content %}
-
+<html>
 <head>
 <style>
 
@@ -61,11 +61,12 @@
     }
     
     </style>
+</head>
 
-    <header>
-        <p>Welcome to the note taking app.</p>
-        <p>Enjoy as you put your thoughts into writting.</p>
-    </header>
+<header>
+    <p>Welcome to the note taking app.</p>
+    <p>Enjoy as you put your thoughts into writting.</p>
+</header>
 
 <section>
     <form method="POST">
@@ -82,14 +83,14 @@
             placeholder="Type the notes here..."
           />
         </div>
-        <button type="submit" class="btn btn-primary">Add Notes</button>
+            <button type="submit" class="btn btn-primary">Add Notes</button>
       </form>
 </section>
   
-</body>
+    <footer>
+        <p>&copy;2024 Dev_aladinh production.</p>
+    </footer>
 
-<footer>
-    <p>&copy;2024 Dev_aladinh production.</p>
-</footer>
-</head>
+</body>
+</html>
 {% endblock %}
