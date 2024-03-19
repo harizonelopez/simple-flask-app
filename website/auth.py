@@ -14,11 +14,11 @@ def note():
             flash('The note must have more than 10 characters.', category='error')
 
         else:
-            flash('The note has been recorded successfully')
+            flash('The note has been successfully recorded')
     
     return render_template("index.html")
 
-@auth.route('/contacts', methods= ['GET', 'POST'])
+@auth.route('/contact', methods= ['GET', 'POST'])
 def contact():
     if request.method == 'POST':
         return redirect(url_for('views.home'))
